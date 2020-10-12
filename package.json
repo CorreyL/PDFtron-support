@@ -1,0 +1,18 @@
+{
+  "name": "pdftron",
+  "version": "1.0.0",
+  "description": "My brilliant Nuxt.js project",
+  "author": "Roy-daan",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@pdftron/webviewer": "^7.1.2",
+    "nuxt": "^2.0.0"
+  },
+  "devDependencies": {}
+}
