@@ -3,7 +3,11 @@
 </template>
 
 <script>
-import WebViewer from '@pdftron/webviewer';
+let WebViewer;
+if (process.browser) {
+  WebViewer = require('@pdftron/webviewer').default;
+}
+
 export default {
   props: {
     url: {
