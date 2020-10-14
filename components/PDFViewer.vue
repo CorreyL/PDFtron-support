@@ -17,15 +17,15 @@ export default {
   },
 
   mounted () {
-    //   return;
-
-    const instance = WebViewer({
-
-      path: '/webviewer',
-      initialDoc: 'https://pdftron.s3.amazonaws.com/downloads/pl/demo-annotated.pdf'
-    }, this.$refs.viewer.$el
-    );
-    console.log(instance);
+    if (process.browser && WebViewer) {
+      WebViewer({
+          path: '/webviewer',
+          initialDoc: 'https://pdftron.s3.amazonaws.com/downloads/pl/demo-annotated.pdf',
+        }, this.$refs.viewer
+      ).then(instance => {
+        // Code with regards to instance can go here
+      });
+    }
   }
 }
 </script>

@@ -1,6 +1,10 @@
 <template>
   <div class="container">
     <div>
+      <pdfViewer
+        :url="'https://pdftron.s3.amazonaws.com/downloads/pl/demo-annotated.pdf'"
+      >
+      </pdfViewer>
       <h1 class="title">
         pdftron
       </h1>
